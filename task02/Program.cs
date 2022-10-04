@@ -5,12 +5,17 @@
 78 -> третьей цифры нет
 32679 -> 6
 
+
+(Не понятно что делать с отрицательными числами)
+
 /*/
 
 Console.WriteLine("Введите число");
 
 string str=Console.ReadLine();
 int A = int.Parse(str);
+
+// A=Math.Abs(A);
 
 if (A < 100) Console.WriteLine("третьей цифры нет");
 
@@ -22,5 +27,5 @@ else
     }
     Console.WriteLine(A % 10);
 
-    //Console.WriteLine(str[2]);
+    
 }
